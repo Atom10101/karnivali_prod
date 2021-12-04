@@ -77,7 +77,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'karnivali.wsgi.application'
-ASGI_APPLICATION = 'karnivali.asgi.application'
+ASGI_APPLICATION = 'karnivali.routing.application'
 
 
 # Database
@@ -87,11 +87,11 @@ ASGI_APPLICATION = 'karnivali.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME':'online_kar',
+        'USER':'karnivali',
+        'PASSWORD':'karnivali',
+        'HOST':'database-1.cryv4fddb5ta.us-east-2.rds.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
